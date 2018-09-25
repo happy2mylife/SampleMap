@@ -1,8 +1,8 @@
-// スタイル: normal, gray, bright, blue, warm, MIERUNE
-var style = "normal";
+// スタイル: mierune, mierune_mono
+var style = "mierune_mono";
 
 // URL設定
-var url = "https://tile.cdn.mierune.co.jp/styles/" + style + "/{z}/{x}/{y}.png";
+var url = "https://tile.mierune.co.jp/" + style + "/{z}/{x}/{y}.png";
 
 // MIERUNE地図 読み込み
 var m_map = new L.tileLayer(url, {
@@ -16,12 +16,3 @@ var map = L.map('map', {
     zoomControl: true,
     layers: [m_map]
 });
-
-// マーカー設定
-var Map_Point = L.marker(
-    [35.681, 139.767]
-).addTo(map);
-
-// ポップアップ設定
-var comment = '東京駅だよ!!';
-Map_Point.bindPopup(comment).openPopup();
