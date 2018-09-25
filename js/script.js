@@ -1,4 +1,3 @@
-
 // スタイル: normal, gray, bright, blue, warm, MIERUNE
 var style = "normal";
 
