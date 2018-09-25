@@ -1,12 +1,9 @@
 
-// 「Standard, Premium, Global Scale」プラン 認証キー
-var apikey = "xxxxxxxxxx";
-
 // スタイル: normal, gray, bright, blue, warm, MIERUNE
 var style = "normal";
 
 // URL設定
-var url = "https://tile.cdn.mierune.co.jp/styles/" + style + "/{z}/{x}/{y}.png" + "?key=" + apikey;
+var url = "https://tile.cdn.mierune.co.jp/styles/" + style + "/{z}/{x}/{y}.png";
 
 // MIERUNE地図 読み込み
 var m_map = new L.tileLayer(url, {
